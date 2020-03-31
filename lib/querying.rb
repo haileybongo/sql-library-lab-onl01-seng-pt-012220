@@ -13,7 +13,9 @@ end
 
 
 def select_value_and_count_of_most_prolific_species
-  "SELECT name, SUM("
+  "SELECT species, SUM(name)
+  FROM characters
+  SORT"
 end
 
 def select_name_and_series_subgenres_of_authors
